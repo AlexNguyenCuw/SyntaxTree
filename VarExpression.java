@@ -3,12 +3,13 @@ public class VarExpression extends Expression
 {
 private String varName;
 	
-	public VarExpression()
+	public VarExpression(String varName)
 	{
-		
+		this.varName = varName;
 	}
-	public void add(String s)
+	
+	public String toString()
 	{
-		varName = s;
+		return varName;
 	}
 }
